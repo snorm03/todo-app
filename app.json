@@ -12,6 +12,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "experiments": {
+      "baseUrl": "/expo-gh-pages"
+    },
     "ios": {
       "supportsTablet": true
     },
@@ -22,7 +25,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": null
     }
   }
 }

@@ -6,16 +6,30 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build": "npx expo export:web",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages --nojekyll -d dist"
   },
   "dependencies": {
-    "expo": "~52.0.37",
+    "@expo/metro-runtime": "~4.0.1",
+    "@expo/webpack-config": "^18.0.1",
+    "@rneui/base": "^4.0.0-rc.7",
+    "@rneui/themed": "^4.0.0-rc.8",
+    "expo": "^52.0.38",
     "expo-status-bar": "~2.0.1",
     "react": "18.3.1",
-    "react-native": "0.76.7"
+    "react-dom": "18.2.0",
+    "react-native": "0.76.7",
+    "react-native-safe-area-context": "^5.3.0",
+    "react-native-vector-icons": "^10.2.0",
+    "react-native-web": "~0.18.10"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@expo/webpack-config": "^19.0.1",
+    "gh-pages": "^6.3.0"
   },
-  "private": true
+  "private": true,
+  "homepage": "https://snorm03.github.io/todo-app/"
 }
