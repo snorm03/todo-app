@@ -15,7 +15,7 @@ export default function TaskItem({ task }) {
       onPress={handleCheckBoxPress}  
       title={task.title}
       iconType="material-community"
-      checkedIcon="checkbox-outline"
+      checkedIcon="checkbox-marked-outline"
       uncheckedIcon="checkbox-blank-outline"
       checkedColor="#387838"
       uncheckedColor="#323332"

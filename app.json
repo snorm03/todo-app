@@ -13,7 +13,7 @@
       "backgroundColor": "#ffffff"
     },
     "experiments": {
-      "baseUrl": "/expo-gh-pages"
+      "baseUrl": "/todo-app"
     },
     "ios": {
       "supportsTablet": true
@@ -25,7 +25,14 @@
       }
     },
     "web": {
-      "favicon": null
-    }
+      "build": {
+        "publicPath": "/todo-app/"
+      }
+    },
+    "assetBundlePatterns": [
+      "node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/*",
+      "node_modules/@expo/vector-icons/Fonts/*" 
+    ]
   }
 }
+
